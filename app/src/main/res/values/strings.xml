@@ -17,7 +17,7 @@
     <string name="equals">=</string>
     <string name="clear">C</string>
     <string name="decimal">.</string>
-    <string name="negative">+/-</string>
-    <string name="percent">%</string>
+    <string name="pOpen">(</string>
+    <string name="pClose">)</string>
     <string name="backspace">⌫</string>
 </resources>

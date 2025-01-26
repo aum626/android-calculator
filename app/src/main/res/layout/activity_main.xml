@@ -81,11 +81,11 @@
         app:layout_constraintTop_toTopOf="@+id/btn8" />
 
     <Button
-        android:id="@+id/btnNegative"
+        android:id="@+id/btnP_open"
         android:layout_width="74dp"
         android:layout_height="75dp"
         android:layout_marginStart="17dp"
-        android:text="@string/negative"
+        android:text="@string/pOpen"
         app:layout_constraintStart_toEndOf="@+id/btnClear"
         app:layout_constraintTop_toTopOf="@+id/btnClear" />
 
@@ -108,13 +108,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btnClear" />
 
     <Button
-        android:id="@+id/btnPercent"
+        android:id="@+id/btnP_close"
         android:layout_width="74dp"
         android:layout_height="75dp"
         android:layout_marginStart="17dp"
-        android:text="@string/percent"
-        app:layout_constraintStart_toEndOf="@+id/btnNegative"
-        app:layout_constraintTop_toTopOf="@+id/btnNegative" />
+        android:text="@string/pClose"
+        app:layout_constraintStart_toEndOf="@+id/btnP_open"
+        app:layout_constraintTop_toTopOf="@+id/btnP_open" />
 
     <Button
         android:id="@+id/btnPlus"
@@ -122,8 +122,8 @@
         android:layout_height="75dp"
         android:layout_marginStart="17dp"
         android:text="@string/plus"
-        app:layout_constraintStart_toEndOf="@+id/btnPercent"
-        app:layout_constraintTop_toTopOf="@+id/btnPercent" />
+        app:layout_constraintStart_toEndOf="@+id/btnP_close"
+        app:layout_constraintTop_toTopOf="@+id/btnP_close" />
 
     <Button
         android:id="@+id/btn2"
