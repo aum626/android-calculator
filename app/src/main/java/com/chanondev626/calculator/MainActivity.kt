@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     private fun allBtn(){
         // allButton
+        var cls = false
         val textView = findViewById<TextView>(R.id.textView)
         val btn0 = findViewById<Button>(R.id.btn0)
         val btn1 = findViewById<Button>(R.id.btn1)
@@ -50,55 +51,132 @@ class MainActivity : AppCompatActivity() {
 
         // allButton
         btnParenthesesOpen.setOnClickListener{
-            textView.append("(")
+            when (cls) {
+                true -> {
+                    textView.text = "("
+                    cls = false
+                }
+                false -> textView.append("(")
+            }
         }
         btnParenthesesClose.setOnClickListener{
-            textView.append(")")
+            when (cls) {
+                true -> {
+                    textView.text = ")"
+                    cls = false
+                }
+                false -> textView.append(")")
+            }
         }
         btn0.setOnClickListener{
-            textView.append("0")
+            when (cls) {
+                true -> {
+                    textView.text = "0"
+                    cls = false
+                }
+                false -> textView.append("0")
+            }
         }
         btn1.setOnClickListener{
-            textView.append("1")
+            when (cls) {
+                true -> {
+                    textView.text = "1"
+                    cls = false
+                }
+                false -> textView.append("1")
+            }
         }
         btn2.setOnClickListener{
-            textView.append("2")
+            when (cls) {
+                true -> {
+                    textView.text = "2"
+                    cls = false
+                }
+                false -> textView.append("2")
+            }
         }
         btn3.setOnClickListener{
-            textView.append("3")
+            when (cls) {
+                true -> {
+                    textView.text = "3"
+                    cls = false
+                }
+                false -> textView.append("3")
+            }
         }
         btn4.setOnClickListener{
-            textView.append("4")
+            when (cls) {
+                true -> {
+                    textView.text = "4"
+                    cls = false
+                }
+                false -> textView.append("4")
+            }
         }
         btn5.setOnClickListener{
-            textView.append("5")
+            when (cls) {
+                true -> {
+                    textView.text = "5"
+                    cls = false
+                }
+                false -> textView.append("5")
+            }
         }
         btn6.setOnClickListener{
-            textView.append("6")
+            when (cls) {
+                true -> {
+                    textView.text = "6"
+                    cls = false
+                }
+                false -> textView.append("6")
+            }
         }
         btn7.setOnClickListener{
-            textView.append("7")
+            when (cls) {
+                true -> {
+                    textView.text = "7"
+                    cls = false
+                }
+                false -> textView.append("7")
+            }
         }
         btn8.setOnClickListener{
-            textView.append("8")
+            when (cls) {
+                true -> {
+                    textView.text = "8"
+                    cls = false
+                }
+                false -> textView.append("8")
+            }
         }
         btn9.setOnClickListener{
-            textView.append("9")
+            when (cls) {
+                true -> {
+                    textView.text = "9"
+                    cls = false
+                }
+                false -> textView.append("9")
+            }
         }
         btnPlus.setOnClickListener{
             textView.append("+")
+            cls = false
         }
         btnMinus.setOnClickListener{
             textView.append("-")
+            cls = false
         }
         btnMultiply.setOnClickListener{
             textView.append("*")
+            cls = false
         }
         btnDivide.setOnClickListener{
             textView.append("/")
+            cls = false
         }
         btnClear.setOnClickListener{
             textView.text = ""
+            cls = true
         }
         btnBack.setOnClickListener{
             val str = textView.text.toString()
@@ -116,6 +194,7 @@ class MainActivity : AppCompatActivity() {
                 val postfix = infixToPostfix(expression)
                 val result = evaluatePostfix(postfix)
                 textView.text = result.toString()
+                cls = true
             } catch (e: Exception) {
                 textView.text = "Error"
             }
