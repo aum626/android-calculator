@@ -1,4 +1,4 @@
-package com.chanondev626.myapplication
+package com.chanondev626.calculator
 
 import org.junit.Test
 

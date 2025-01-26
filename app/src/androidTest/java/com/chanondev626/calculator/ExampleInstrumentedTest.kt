@@ -1,4 +1,4 @@
-package com.chanondev626.myapplication
+package com.chanondev626.calculator
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

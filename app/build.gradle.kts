@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.chanondev626.myapplication"
+    namespace = "com.chanondev626.calculator"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.chanondev626.myapplication"
+        applicationId = "com.chanondev626.calculator"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
